@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allbirds - Sustainable Footwear | Ecwid Template</title>
+  <meta name="description" content="Comfortable, sustainable shoes made from innovative natural materials. Better for your feet, better for the planet.">
+  
+  <!-- Ecwid Integration -->
+  <script src="https://app.ecwid.com/script.js?1003&data_platform=code&data_date=2024-01-01" charset="utf-8"></script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="preconnect" href="https://app.ecwid.com">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Allbirds - Sustainable Footwear">
+  <meta property="og:description" content="Comfortable, sustainable shoes made from innovative natural materials.">
+  <meta property="og:image" content="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Allbirds - Sustainable Footwear">
+  <meta name="twitter:description" content="Comfortable, sustainable shoes made from innovative natural materials.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200">
+</head>
+<body>
+  <div id="app"></div>
+  
+  <!-- Ecwid Store Widget -->
+  <script>
+    window.ec = window.ec || Object();
+    window.ec.config = window.ec.config || Object();
+    window.ec.config.storefrontUrls = window.ec.config.storefrontUrls || Object();
+    window.ec.config.storefrontUrls.cleanUrls = true;
+    window.ec.config.chameleon = window.ec.config.chameleon || Object();
+    window.ec.config.chameleon.colors = window.ec.config.chameleon.colors || Object();
+    window.ec.config.chameleon.colors.primary = '#10B981';
+    window.ec.config.chameleon.colors.accent = '#F59E0B';
+    
+    // Initialize Ecwid when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof xProductBrowser !== 'undefined') {
+        xProductBrowser(
+          "categoriesPerRow=3",
+          "views=grid(20,3) list(60) table(60)",
+          "categoryView=grid",
+          "searchView=list",
+          "id=my-store-1003"
+        );
+      }
+    });
+  </script>
+  
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
